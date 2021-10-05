@@ -1,0 +1,30 @@
+#Primer Examen parcial, Metodos Cuantitativos - Genaro, Isa, Valentin
+#II Trimestre 2019, Enoe, 
+
+setmdr
+enoe1
+enoe2
+hogar
+sden
+vivien 
+
+#obtener el sexo, edad, los años de educacion y el numero de horas trabajadas por
+#las personas que trabajan. 
+
+enoe1$sex1 <- (enoe1$ptr*enoe1$sex) 
+enoe1$sex12 <- factor(enoe1$sex, levels = c(1,2), labels = c("Hombre, Mujer"))
+
+enoe1$edat <- (enoe1$ptr*enoe1$eda.y) 
+
+enoe1$añosed <- (enoe1$ptr*enoe1$hrsocup) 
+
+enoe1$salh <- (enoe1$hoastr)/8 
+
+Salporh <- (2742/160)
+enoe1$Salpah <- ((empe1$salh)*Salporh) 
+
+(enoe1$ing_x_hrs*enoe1$ingresosjef) 
+#Ln(salario por hora); edad; edad^2; educacion; mujer+
+#Jefes de familia mayores a 15 años y menores a 65 que trabajen
+
+enoe1$Eda
