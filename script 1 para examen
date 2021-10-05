@@ -27,4 +27,12 @@ enoe1$Salpah <- ((empe1$salh)*Salporh)
 #Ln(salario por hora); edad; edad^2; educacion; mujer+
 #Jefes de familia mayores a 15 años y menores a 65 que trabajen
 
-enoe1$Eda
+enoe1$Eda <- enoe1$edat*enoe1$ingresosjef
+enoe1anosJE <- enoe1$anosed*enoe1$ingresosjef
+enoeHorsJ <- enoe1$hoastr*enoe1$ingresosjef
+enoe1$edaJ2 <- (enoe1$añosJE^2)
+enoe1$seJ <- (enoe1$ingresosjef*enoe1sex) 
+enoe1$sex22 <- factor(enoe1$sex2, levels = c(2), labels = c("Mujer"))
+
+formula <- log(y) - x1+x2+x3+x4
+
